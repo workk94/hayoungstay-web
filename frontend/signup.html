@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하영스테이</title>
+    <meta name="author" content="author" />
+    <meta name="description" content="여행지도 서비스" />
+    <meta name="keywords" content="여행지도, 제주살이, 제주여행" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sign.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <h1 class="nav-title">
+            <div class="logo-container">
+              <img class="nav-logo" src="src/umbrella.png" alt="로고">
+              <a href="./index.html">하영스테이</a>
+            </div>
+          </h1>
+          <button class="nav-contact">
+            <a href="./signin.html">로그인/회원가입</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="inner">
+        <div class="signin-container">
+          <h2>하영스테이 회원가입</h2>
+          <div class="signin-form">
+            <input type="text" placeholder="아이디" id="userID" />
+            <input type="password" placeholder="비밀번호" id="password" />
+            <input type="text" placeholder="닉네임" id="nickname" />
+            <input type="button" value="회원가입" id="signup" />
+            <!-- signup-container -->
+          </div>
+          <!-- signin-form -->
+        </div>
+        <!-- signin-container -->
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/url.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

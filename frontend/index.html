@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하영스테이</title>
+    <meta name="author" content="author" />
+    <meta name="description" content="여행지도 서비스" />
+    <meta name="keywords" content="여행지도, 제주살이, 제주여행" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+  </head>
+
+  <body>
+
+    <div>
+      
+    </div>
+    <nav>
+      <div class="inner">
+        <div class="nav-container">
+          <h1 class="nav-title">
+            <div class="logo-container">
+              <img class="nav-logo" src="src/umbrella.png" alt="로고" />
+              <a href="./index.html">하영스테이</a>
+            </div>
+          </h1>
+
+          <div class="sign-container">
+            <!-- 비회원 -->
+            <div class="unsigned">
+              <a href="./signin.html">로그인/회원가입</a>
+            </div>
+            <!-- 회원 -->
+            <div class="signed hidden">
+              <div class="dropdown">
+                <div class="dropdown-button">
+                  안녕하세요. <span class="nickname"></span>님.
+                </div>
+                <div class="dropdown-content">
+                  <button id="sign-out">로그아웃</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="category">
+        <div class="inner">
+          <div class="category-container">
+            <h2 class="category-title">마을 카테고리를 선택해보세요</h2>
+            <div class="category-list">
+              <button class="category-item" id="gujwaeup">구좌읍</button
+              ><button class="category-item" id="jocheoneup">조천읍</button
+              ><button class="category-item" id="aewoleup">애월읍</button
+              ><button class="category-item" id="gasiri">가시리</button
+              ><button class="category-item" id="haryeri">하례리</button
+              ><button class="category-item" id="sagyeri">사계리</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 카테고리 -->
+
+      <div id="description">
+        <div class="inner">
+          <div class="description-container">
+            <h2 class="description-title">- 마을소개 -</h2>
+            <div class="description-contents">
+              <div id="text-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 마을 설명 -->
+
+      <div id="map" class="inner"></div>
+      <!-- 카카오지도 -->
+
+      <a id="kakaotalk-sharing-btn" href="javascript:kakaoShare()">
+        <img
+          src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+          alt="카카오톡 공유 보내기 버튼"
+        />
+      </a>
+      <!-- 카카오톡 공유하기 -->
+    </main>
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=69812f8c98c18be411e99af0f920692c&libraries=services"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/url.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/description.js"></script>
+    <script src="./js/kakaoShare.js"></script>
+  </body>
+</html>
