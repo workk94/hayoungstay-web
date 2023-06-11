@@ -22,7 +22,7 @@ const jwtMiddleware = function (req, res, next) {
   } catch {
     res.status(403).json({
       isSuccess: false,
-      code: 403,
+      code: 403, // 403 Forbidden
       message: "검증 실패",
     });
   }
